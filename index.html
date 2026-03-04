@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +9,36 @@
     <link rel="icon" href="https://cdn.orderonline.id/uploads/images_8633291767803962604.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
+        
         body {
             font-family: 'Inter', sans-serif;
         }
-
+        
         .preview-iframe-container {
             background-color: #f8f9fa;
             border: 1px solid #e5e7eb;
             border-radius: 12px;
             overflow: hidden;
         }
-
+        
         .gradient-bg {
             background: linear-gradient(-45deg, #ec4899, #9333ea, #db2777, #7c3aed, #f472b6, #a855f7);
             background-size: 400% 400%;
             animation: gradientMove 8s ease infinite;
         }
-
+        
         @keyframes gradientMove {
             0% {
                 background-position: 0% 50%;
             }
-
             50% {
                 background-position: 100% 50%;
             }
-
             100% {
                 background-position: 0% 50%;
             }
         }
-
+        
         .preview-container {
             min-height: 200px;
             max-height: 500px;
@@ -49,7 +46,7 @@
             background: #1e1e1e;
             border-radius: 8px;
         }
-
+        
         .preview-container pre {
             white-space: pre-wrap;
             word-wrap: break-word;
@@ -60,50 +57,48 @@
             font-size: 13px;
             line-height: 1.5;
         }
-
+        
         textarea {
             resize: vertical;
             min-height: 80px;
         }
-
+        
         .form-input {
             transition: all 0.3s ease;
         }
-
+        
         .form-input:focus {
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15);
         }
-
+        
         /* Scrollbar styling */
         ::-webkit-scrollbar {
             width: 8px;
             height: 8px;
         }
-
+        
         ::-webkit-scrollbar-track {
             background: #f1f1f1;
             border-radius: 4px;
         }
-
+        
         ::-webkit-scrollbar-thumb {
             background: #888;
             border-radius: 4px;
         }
-
+        
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
     </style>
 </head>
-
 <body class="gradient-bg min-h-screen">
     <div class="container mx-auto px-4 py-8">
         <div class="max-w-7xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-8">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
-                    </i>BYY NDIKI
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg"></i>NDIKI
                 </h1>
                 <p class="text-white/80 text-lg">Generate • Schedule • Running • Order • Closing • Bookkeeping</p>
             </div>
@@ -173,7 +168,7 @@
                                 <h4 class="font-bold text-white mb-3 flex items-center">
                                     <i class="fas fa-images text-pink-300 mr-2"></i>Fitur Gambar Detail
                                 </h4>
-
+                                
                                 <!-- Baris Tujuh & Delapan -->
                                 <div class="mb-4">
                                     <label class="block text-pink-100 font-medium mb-1 text-sm" for="baristujuh">Link Fitur Gambar 1</label>
@@ -233,7 +228,7 @@
                             <div>
                                 <label class="block text-white font-semibold mb-2" for="barisduasatu">
                                     <span class="bg-white/20 text-white px-2 py-1 rounded text-sm mr-2 backdrop-blur-sm">16</span>
-                                    Form Pemesanan (Embed DARI OO )
+                                    Form Pemesanan (Embed Code)
                                 </label>
                                 <textarea id="barisduasatu" rows="4" class="form-input w-full px-4 py-3 bg-white/90 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-pink-400 font-mono text-sm text-gray-900" placeholder="<script src='...'></script>"></textarea>
                             </div>
@@ -252,8 +247,7 @@
                                 <i class="fas fa-code mr-2 text-indigo-600"></i>Hasil Generate
                             </h3>
                             <div id="previewContainer" class="preview-container mb-4">
-                                <p class="text-gray-400 text-center py-8 italic">Klik "Generate" untuk melihat hasil...
-                                </p>
+                                <p class="text-gray-400 text-center py-8 italic">Klik "Generate" untuk melihat hasil...</p>
                             </div>
                             <div class="flex gap-3">
                                 <button id="copyBtn" class="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center border border-gray-300">
@@ -275,15 +269,11 @@
                                 </h3>
                                 <span class="text-xs bg-white/20 text-white px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">Mobile View</span>
                             </div>
-
-                            <div class="preview-iframe-container relative bg-white/10 backdrop-blur-sm border border-white/20"
-                                style="padding-top: 177.78%; max-height: 800px;">
-                                <iframe id="livePreview"
-                                    class="absolute top-0 left-0 w-full h-full border-0 bg-white rounded-lg"
-                                    sandbox="allow-scripts"
-                                    srcdoc="<html><body style='display:flex;justify-content:center;align-items:center;height:100%;background:#f3f4f6;'><p class='text-gray-400'>Preview will appear here...</p></body></html>"></iframe>
+                            
+                            <div class="preview-iframe-container relative bg-white/10 backdrop-blur-sm border border-white/20" style="padding-top: 177.78%; max-height: 800px;">
+                                <iframe id="livePreview" class="absolute top-0 left-0 w-full h-full border-0 bg-white rounded-lg" sandbox="allow-scripts" srcdoc="<html><body style='display:flex;justify-content:center;align-items:center;height:100%;background:#f3f4f6;'><p class='text-gray-400'>Preview will appear here...</p></body></html>"></iframe>
                             </div>
-
+                            
                             <div class="mt-4 flex items-center justify-center gap-2 text-sm text-white/70">
                                 <i class="fas fa-info-circle"></i>
                                 <span>Preview simulates tampilan handphone</span>
@@ -355,40 +345,38 @@
 
     <!-- Product Info -->
     <div class="bg-white p-4 shadow-sm">
-            <div class="flex items-start justify-between gap-4">
-                <div class="flex-1">
-                    <h1 class="text-lg font-medium text-[#000000] leading-tight mb-2">
-                <span class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white text-xs px-2 py-0.5 rounded font-medium mb-1">STAR+</span> Not provided </h1>
-                    <div class="flex items-center gap-2 mb-2">
-                    </div>
-                </div>
+        <div class="flex items-start justify-between gap-4 mb-3">
+            <div class="flex-1">
+                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded font-medium mb-2 inline-block">STAR+</span>
+                <h1 class="text-lg font-semibold text-gray-900 leading-tight">${fields.barisdua}</h1>
             </div>
-            
-            <!-- Price Section -->
-            <div class="flex items-end gap-2 mb-3">
-                <span class="text-[#d1031c] font-bold text-3xl">RpNot provided</span>
-                <span class="text-gray-400 line-through text-sm mb-1">RpNot provided</span>
-                <span class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white text-xs px-2 py-1 rounded font-medium mb-1">-54% OFF</span>
-            </div>
+        </div>
 
-            <!-- Flash Sale Badge -->
-            <div class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white p-3 rounded-lg flex items-center justify-between">
-                <div class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap w-5 h-5 fill-yellow-300 text-yellow-300"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
-                    <span class="font-bold text-sm">FLASH SALE</span>
-                </div>
-                <div class="flex items-center gap-2 text-sm">
-                    <span>Berakhir Dalam :</span>
-                    <div class="flex gap-1 items-center">
-                        <span class="bg-white text-[#f53d2d] px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center" id="flashHours">02</span>
-                        <span class="font-bold">:</span>
-                        <span class="bg-white text-[#f53d2d] px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center" id="flashMinutes">06</span>
-                        <span class="font-bold">:</span>
-                        <span class="bg-white text-[#f53d2d] px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center" id="flashSeconds">47</span>
-                    </div>
+        <!-- Price Section -->
+        <div class="flex items-end gap-3 mb-3 flex-wrap">
+            <span class="text-red-600 font-bold text-3xl">Rp${fields.barisduapuluh}</span>
+            <span class="text-gray-400 line-through text-sm mb-1">Rp${fields.barissembilanbelas}</span>
+            <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded font-bold">-54% OFF</span>
+        </div>
+
+        <!-- Flash Sale -->
+        <div class="flash-sale-bg text-white p-3 rounded-lg flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i data-lucide="zap" class="w-5 h-5 fill-yellow-300 text-yellow-300"></i>
+                <span class="font-bold text-sm">FLASH SALE</span>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+                <span class="text-xs">Berakhir Dalam</span>
+                <div class="flex gap-1">
+                    <span id="flashHours" class="bg-white text-red-500 px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center">00</span>
+                    <span class="font-bold">:</span>
+                    <span id="flashMinutes" class="bg-white text-red-500 px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center">00</span>
+                    <span class="font-bold">:</span>
+                    <span id="flashSeconds" class="bg-white text-red-500 px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center">00</span>
                 </div>
             </div>
         </div>
+    </div>
 
     <!-- Shop Info -->
     <div class="bg-white mt-2 p-4 shadow-sm">
@@ -482,7 +470,6 @@
         <div class="p-4 border border-t-0 border-gray-200 rounded-b-lg">
             ${fields.barisduasatu}
         </div>
-    </div>
     </div>
 
     <script>
@@ -634,9 +621,7 @@
     </script>
 
     <!-- Overlay untuk efek glow -->
-    <div class="fixed top-0 left-0 w-full h-full -z-5 pointer-events-none"
-        style="background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.3) 0%, transparent 70%);"></div>
-    <script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+    <div class="fixed top-0 left-0 w-full h-full -z-5 pointer-events-none" style="background: radial-gradient(circle at 50% 50%, rgba(236, 72, 153, 0.3) 0%, transparent 70%);"></div>
+<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
 </body>
-
 </html>
