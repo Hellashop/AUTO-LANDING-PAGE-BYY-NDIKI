@@ -7,7 +7,7 @@
     <title>AUTO LANDING PAGE GENERATOR</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="https://cdn.orderonline.id/uploads/images_3731891772625561064.png">
+    <link rel="icon" href="https://cdn.orderonline.id/uploads/images_8633291767803962604.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -355,44 +355,46 @@
 
     <!-- Product Info -->
     <div class="bg-white p-4 shadow-sm">
-        <div class="flex items-start justify-between gap-4 mb-3">
-            <div class="flex-1">
-                <span class="bg-red-500 text-white text-xs px-2 py-1 rounded font-medium mb-2 inline-block">STAR+</span>
-                <h1 class="text-lg font-semibold text-gray-900 leading-tight">${fields.barisdua}</h1>
+            <div class="flex items-start justify-between gap-4">
+                <div class="flex-1">
+                    <h1 class="text-lg font-medium text-[#000000] leading-tight mb-2">
+                <span class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white text-xs px-2 py-0.5 rounded font-medium mb-1">STAR+</span> Not provided </h1>
+                    <div class="flex items-center gap-2 mb-2">
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <!-- Price Section -->
-        <div class="flex items-end gap-3 mb-3 flex-wrap">
-            <span class="text-red-600 font-bold text-3xl">Rp${fields.barisduapuluh}</span>
-            <span class="text-gray-400 line-through text-sm mb-1">Rp${fields.barissembilanbelas}</span>
-            <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded font-bold">-54% OFF</span>
-        </div>
-
-        <!-- Flash Sale -->
-        <div class="flash-sale-bg text-white p-3 rounded-lg flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <i data-lucide="zap" class="w-5 h-5 fill-yellow-300 text-yellow-300"></i>
-                <span class="font-bold text-sm">FLASH SALE</span>
+            
+            <!-- Price Section -->
+            <div class="flex items-end gap-2 mb-3">
+                <span class="text-[#d1031c] font-bold text-3xl">RpNot provided</span>
+                <span class="text-gray-400 line-through text-sm mb-1">RpNot provided</span>
+                <span class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white text-xs px-2 py-1 rounded font-medium mb-1">-54% OFF</span>
             </div>
-            <div class="flex items-center gap-2 text-sm">
-                <span class="text-xs">Berakhir Dalam</span>
-                <div class="flex gap-1">
-                    <span id="flashHours" class="bg-white text-red-500 px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center">00</span>
-                    <span class="font-bold">:</span>
-                    <span id="flashMinutes" class="bg-white text-red-500 px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center">00</span>
-                    <span class="font-bold">:</span>
-                    <span id="flashSeconds" class="bg-white text-red-500 px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center">00</span>
+
+            <!-- Flash Sale Badge -->
+            <div class="bg-gradient-to-r from-[#ff3838] to-[#d0011b] text-white p-3 rounded-lg flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" aria-hidden="true" class="lucide lucide-zap w-5 h-5 fill-yellow-300 text-yellow-300"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+                    <span class="font-bold text-sm">FLASH SALE</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm">
+                    <span>Berakhir Dalam :</span>
+                    <div class="flex gap-1 items-center">
+                        <span class="bg-white text-[#f53d2d] px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center" id="flashHours">02</span>
+                        <span class="font-bold">:</span>
+                        <span class="bg-white text-[#f53d2d] px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center" id="flashMinutes">06</span>
+                        <span class="font-bold">:</span>
+                        <span class="bg-white text-[#f53d2d] px-1.5 py-0.5 rounded font-bold text-xs min-w-[22px] text-center" id="flashSeconds">47</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Shop Info -->
     <div class="bg-white mt-2 p-4 shadow-sm">
         <div class="flex items-center gap-3 mb-3">
             <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center overflow-hidden border border-gray-200">
-                <img https://cdn.orderonline.id/uploads/images_3731891772625561064.png" class="w-full h-full object-cover" alt="Shop">
+                <img src="https://cdn.orderonline.id/uploads/images_8633291767803962604.png" class="w-full h-full object-cover">
             </div>
             <div class="flex-1">
                 <h3 class="font-bold text-gray-900">${fields.baristiga}</h3>
@@ -481,14 +483,6 @@
             ${fields.barisduasatu}
         </div>
     </div>
-
-    <!-- Bottom Navigation -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-3 max-w-md mx-auto z-50">
-        <div class="flex gap-2">
-            <button class="w-full shopee-gradient text-white py-3 rounded-lg font-bold shadow-lg flex items-center justify-center gap-2 transform transition-all duration-200 active:scale-[0.98]" onclick="document.getElementById('orderForm').scrollIntoView({behavior:'smooth'})">
-                <i data-lucide="shopping-cart" class="w-5 h-5"></i> Beli Sekarang
-            </button>
-        </div>
     </div>
 
     <script>
